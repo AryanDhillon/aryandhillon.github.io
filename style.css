@@ -102,9 +102,15 @@ nav .right a span{
 }
 
 .hero-section .headshot img {
-    width: 350px;
-    border-radius: 50%;
-}
+    width: 280px;                          /* fixed width */
+    height: 380px;                         /* fixed height — portrait style */
+    object-fit: cover;                     /* fills the box without stretching */
+    object-position: top;                  /* keeps your face visible at top */
+    border-radius: 20px;                   /* rounded corners */
+    box-shadow: 0px 10px 30px             /* soft shadow underneath */
+    rgba(0, 0, 0, 0.15);                  /* subtle, not too dark */
+    border: 3px solid #e0e0e0;            /* thin light grey border */
+    }
 
 .skills-section {
 /* SECTION 2: SKILLS */
